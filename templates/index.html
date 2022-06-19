@@ -1,0 +1,94 @@
+<html>
+<body>
+	<h3>Income Prediction Form</h3>
+
+<div>
+<form action="/result" method="POST">
+	<label for="age">Age</label>
+	<select id="age" name="age">
+	<option value=1>Below 31</option>
+	<option value=2>Above 30 but below 40</option>
+	<option value=3>Above 40 but below 50</option>
+	<option value=4>Above 50 but below 70</option>
+	<option value=5>Above 70</option>
+	</select>
+	<br>
+	
+	<br>
+	<label for="edu">Education</label>
+	<select id="edu" name="edu">
+	<option value="6">10th</option>
+	<option value="7">11th</option>
+	<option value="8">12th</option>
+	<option value="2">1st-4th</option>
+	<option value="3">5th-6th</option>
+	<option value="4">7th-8th</option>
+	<option value="5">9th</option>
+	<option value="12">Assoc-acdm</option>
+	<option value="11">Assoc-voc</option>
+	<option value="13">Bachelors</option>
+	<option value="16">Doctorate</option>
+	<option value="9">HS-grad</option>
+	<option value="14">Masters</option>
+	<option value="1">Preschool</option>
+	<option value="15">Prof-school</option>
+	<option value="10">Some-college</option>
+	</select>
+	<br>
+
+	<br>
+	<label for="hours_per_week">Hours per Week </label>
+	<input type="text" id="hours_per_week" name="hours_per_week">btw:[1-99]
+	<br>
+	
+	<br>
+	<label for="occup">Occupation</label>
+	<select id="occup" name="occup">
+	<option value="0">Adm-clerical</option>
+	<option value="8">Armed-Forces</option>
+	<option value="2">Craft-repair</option>
+	<option value="3">Exec-managerial</option>
+	<option value="5">Farming-fishing</option>
+	<option value="13">Handlers-cleaners</option>
+	<option value="6">Machine-op-inspect</option>
+	<option value="7">Other-service</option>
+	<option value="10">Priv-house-serv</option>
+	<option value="9">Prof-specialty</option>
+	<option value="12">Protective-serv</option>
+	<option value="11">Sales</option>
+	<option value="4">Tech-support</option>
+	<option value="14">Transport-moving</option>
+	</select>
+	<br>
+
+	
+	<br>
+	<label for="race">Race</label>
+	<select id="race" name="race">
+	<option value="0">Amer Indian Eskimo</option>
+	<option value="1">Asian Pac Islander</option>
+	<option value="2">Black</option>
+	<option value="3">Other</option>
+	<option value="4">White</option>
+	</select>
+	<br>
+	<br>
+	<label for="gender">Gender</label>
+	<select id="gender" name="gender">
+	<option value="0">Female</option>
+	<option value="1">Male</option>
+	</select>
+	<br>
+
+	
+
+	
+	
+	<br>
+	<input type="submit" value="Predict">
+</form>
+</div>
+
+<p>{{prediction}}</p>
+</body>
+</html>
